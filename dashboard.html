@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IoT Monitor — VerdeTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">VERDETECH 🌱</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">IoT Monitor</a></li>
+        <li><a href="products.html">Katalog Hardware</a></li>
+        <li><a href="calculator.html">Kalkulator Panen</a></li>
+        <li><a href="join.html">Gabung Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="section-header">
+      <h2>Live Telemetri Kebun</h2>
+      <p style="font-weight: 600; margin-top: 0.5rem;">Status Node #01 (Kebun Hidroponik Rooftop) — Live Updates</p>
+    </div>
+
+    <div class="sensor-grid">
+      <div class="sensor-card">
+        <h3>Suhu Air</h3>
+        <div class="sensor-value" id="val-temp">24.5 °C</div>
+        <p>Status: Normal</p>
+      </div>
+      <div class="sensor-card">
+        <h3>pH Nutrisi</h3>
+        <div class="sensor-value" id="val-ph">6.2</div>
+        <p>Status: Optimal</p>
+      </div>
+      <div class="sensor-card">
+        <h3>PPM (Pekatan)</h3>
+        <div class="sensor-value" id="val-ppm">1050</div>
+        <p>Status: Perlu Nutrisi</p>
+      </div>
+      <div class="sensor-card">
+        <h3>Kelembapan Udara</h3>
+        <div class="sensor-value" id="val-hum">78 %</div>
+        <p>Status: Optimal</p>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <button class="btn-main" id="btn-toggle-pump">Matikan Pompa Nutrisi 💧</button>
+      <p id="pump-status" style="font-weight: 700; margin-top: 1rem;">Status Pompa: AKTIF (AUTO)</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VerdeTech Platform. Built with HTML, CSS & Vanilla JS.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

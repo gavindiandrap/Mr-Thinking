@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Hardware — VerdeTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">VERDETECH 🌱</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">IoT Monitor</a></li>
+        <li><a href="products.html">Katalog Hardware</a></li>
+        <li><a href="calculator.html">Kalkulator Panen</a></li>
+        <li><a href="join.html">Gabung Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="section-header">
+      <h2>Perangkat & Sensor</h2>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-cat="all">Semua Perangkat</button>
+      <button class="filter-btn" data-cat="sensor">Sensor Node</button>
+      <button class="filter-btn" data-cat="actuator">Pompa & Aktuator</button>
+      <button class="filter-btn" data-cat="kit">Starter Kit</button>
+    </div>
+
+    <div class="grid" id="product-list">
+      <div class="card prod-card" data-cat="sensor">
+        <h3 style="color: var(--accent-purple);">Sensor pH & EC Pro</h3>
+        <p style="margin: 0.8rem 0;">Sensor laboratorium tingkat presisi tinggi untuk membaca kepekatan larutan hidroponik.</p>
+        <span class="btn-main" style="padding: 0.3rem 0.8rem; font-size: 0.9rem;">Rp 450.000</span>
+      </div>
+
+      <div class="card prod-card" data-cat="actuator">
+        <h3 style="color: var(--accent-orange);">Dosing Pump Peristaltik</h3>
+        <p style="margin: 0.8rem 0;">Pompa injeksi presisi mili-liter untuk pengaturan nutrisi A/B mix otomatis.</p>
+        <span class="btn-main" style="padding: 0.3rem 0.8rem; font-size: 0.9rem;">Rp 280.000</span>
+      </div>
+
+      <div class="card prod-card" data-cat="kit">
+        <h3 style="color: var(--primary-green);">Rooftop Farm Kit v2</h3>
+        <p style="margin: 0.8rem 0;">Paket lengkap 100 lubang tanam NFT, controller WiFi, sensor, dan akses aplikasi dashboard.</p>
+        <span class="btn-main" style="padding: 0.3rem 0.8rem; font-size: 0.9rem;">Rp 2.800.000</span>
+      </div>
+
+      <div class="card prod-card" data-cat="sensor">
+        <h3 style="color: var(--accent-purple);">Solar Lux Meter</h3>
+        <p style="margin: 0.8rem 0;">Sensor intensitas radiasi sinar matahari waterproof dengan transmisi LoRa/WiFi.</p>
+        <span class="btn-main" style="padding: 0.3rem 0.8rem; font-size: 0.9rem;">Rp 320.000</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VerdeTech Platform. Built with HTML, CSS & Vanilla JS.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

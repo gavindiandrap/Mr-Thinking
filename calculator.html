@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Panen — VerdeTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">VERDETECH 🌱</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">IoT Monitor</a></li>
+        <li><a href="products.html">Katalog Hardware</a></li>
+        <li><a href="calculator.html">Kalkulator Panen</a></li>
+        <li><a href="join.html">Gabung Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="section-header">
+      <h2>Kalkulator Estimasi Hasil</h2>
+    </div>
+
+    <div class="form-box">
+      <div class="form-group">
+        <label for="crop-select">Pilih Jenis Komoditas:</label>
+        <select id="crop-select">
+          <option value="30">Selada Hidroponik (30 Hari)</option>
+          <option value="45">Bayam Hijau / Merah (25 Hari)</option>
+          <option value="60">Pakcoy Premium (35 Hari)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="holes-input">Jumlah Lubang Tanam:</label>
+        <input type="number" id="holes-input" value="200" min="20" step="10">
+      </div>
+
+      <div style="background: var(--accent-yellow); padding: 1.5rem; border: 2px solid var(--border-color); text-align: center; margin-top: 1.5rem;">
+        <p style="font-weight: 700;">Estimasi Total Hasil Panen / Siklus:</p>
+        <h3 id="res-yield" style="font-size: 2.2rem; color: var(--text-main);">0 Kg</h3>
+        <p style="font-weight: 700; margin-top: 0.5rem;">Proyeksi Nilai Jual:</p>
+        <h4 id="res-revenue" style="font-size: 1.5rem; color: var(--accent-purple);">Rp 0</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VerdeTech Platform. Built with HTML, CSS & Vanilla JS.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

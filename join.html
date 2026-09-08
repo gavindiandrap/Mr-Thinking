@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabung Komunitas — VerdeTech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">VERDETECH 🌱</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">IoT Monitor</a></li>
+        <li><a href="products.html">Katalog Hardware</a></li>
+        <li><a href="calculator.html">Kalkulator Panen</a></li>
+        <li><a href="join.html">Gabung Komunitas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="section-header">
+      <h2>Daftar Anggota Kebun</h2>
+    </div>
+
+    <div class="form-box">
+      <form id="join-form">
+        <div class="form-group">
+          <label for="reg-name">Nama Petani / Komunitas:</label>
+          <input type="text" id="reg-name" placeholder="Misal: Urban Farm Depok">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-email">Email Terdaftar:</label>
+          <input type="email" id="reg-email" placeholder="nama@domain.com">
+        </div>
+
+        <div class="form-group">
+          <label for="reg-type">Skala Perkebunan:</label>
+          <select id="reg-type">
+            <option value="home">Hobi / Balkon Rumah</option>
+            <option value="rooftop">Rooftop Komunitas</option>
+            <option value="commercial">Komersial skala menengah</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-main" style="width: 100%; margin-top: 1rem;">Daftar & Hubungkan IoT 🚀</button>
+      </form>
+
+      <div id="join-alert" style="display: none; margin-top: 1.5rem; padding: 1rem; background: var(--primary-green); border: 2px solid var(--border-color); font-weight: 700;"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 VerdeTech Platform. Built with HTML, CSS & Vanilla JS.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
